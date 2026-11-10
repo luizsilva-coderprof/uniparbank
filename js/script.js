@@ -4,9 +4,11 @@ const nomeBanco = "Banco UniparBank";
 let telefoneCliente = null;
 let observacaoCliente;
 
+console.log(saldo);
+console.log(observacaoCliente);
 
 // function usoVarLet() {
-//     let valor = 20;
+//     const valor = 20;
 
 //     if (true) {
 //         let outroValor = 30;
@@ -19,18 +21,19 @@ let observacaoCliente;
 
 // usoVarLet();
 
+
+if (nomeCliente === null || nomeCliente.trim() === "") {
+    nomeCliente = "Cliente";
+}
+
 const conta = {
     banco: nomeBanco,
     titular: nomeCliente
 };
 
 
-if (nomeCliente === null || nomeCliente.trim() === "") {
-    nomeCliente = "Cliente";
-}
-
 document.getElementById("boasVindas").textContent =
-    `Olá, ${nomeCliente.toUpperCase()}! Bem-vindo ao ${nomeBanco}.`;
+    `Olá, ${conta.titular.toUpperCase()}! Bem-vindo ao ${conta.banco.toUpperCase()}.`;
 
 
 function formatarMoeda(valor) {
