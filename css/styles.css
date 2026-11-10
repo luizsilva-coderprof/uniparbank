@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e8ec;
+    margin: 0;
+    padding: 25px;
+    color: #333;
+}
+
+.banco {
+    width: 420px;
+    max-width: calc(100% - 50px);
+    margin: 35px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #bfc6cf;
+    border-radius: 2px;
+    box-shadow: none;
+    text-align: left;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+    font-size: 25px;
+    margin: 0 0 12px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #183b65;
+}
+
+#boasVindas {
+    font-size: 14px;
+    color: #555;
+    margin: 18px 0 25px;
+}
+
+.saldo {
+    border-radius: 2px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.saldo p {
+    font-size: 13px;
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.valor {
+    font-size: 27px;
+    font-weight: bold;
+    color: #183b65;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    margin: 9px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nota {
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .banco {
+        width: auto;
+        max-width: none;
+        margin: 15px auto;
+        padding: 18px;
+    }
+}
