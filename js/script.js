@@ -64,7 +64,7 @@ function depositar() {
     } else if (confirmar === true) {
         saldo = saldo + valor;
 
-        atualizarSaldo();
+       atualizarSaldo();
 
         document.getElementById("mensagem").textContent =
             `Depósito de ${formatarMoeda(valor)} realizado com sucesso!`;
@@ -107,7 +107,7 @@ function sacar() {
 
 
 function consultarSaldo() {
-    alert(`Olá, ${nomeCliente}! Seu saldo é ${formatarMoeda(saldo)}.`);
+    alert(`Olá, ${conta.titular}! Seu saldo é ${formatarMoeda(saldo)}.`);
 }
 
 
