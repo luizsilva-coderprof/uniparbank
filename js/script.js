@@ -22,7 +22,7 @@ console.log(observacaoCliente);
 // usoVarLet();
 
 
-if (nomeCliente === null || nomeCliente.trim() === "") {
+if (nomeCliente === null && nomeCliente.trim() === "") {
     nomeCliente = "Cliente";
 }
 
